@@ -2,7 +2,7 @@
  * @Author: LiWei 
  * @Date: 2018-12-03 09:09:09 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-12-03 10:03:14
+ * @Last Modified time: 2018-12-03 10:16:41
  */
 
 var gulp=require('gulp');
@@ -71,3 +71,19 @@ var uglify=require('gulp-uglify');
         return gulp.src('./src/js、libs/*.js')
                .pipe(gulp.dest("./bulid/js/libs"))
     })
+     //拷贝css
+     gulp.task('Copycss',function(){
+        return gulp.src('./src/css//*.css')
+               .pipe(gulp.dest("./bulid/css"))
+    })
+  
+
+     //拷贝html
+     gulp.task('Copyhtml',function(){
+        return gulp.src('./src/*.html')
+               .pipe(gulp.dest("./bulid"))
+    })
+
+    //线上
+
+  gulp.task('bulid',gulp.parallel('bjs','Copyjs','Copyhtml'));

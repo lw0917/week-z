@@ -1,0 +1,1 @@
+new Swiper(".banner",{autoplay:{delay:2e3},loop:!0}),new BScroll("section",{click:!0});

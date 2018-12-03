@@ -1,0 +1,84 @@
+@import "common.scss";
+@import "mixin.scss";
+.wrap{
+    width:100%;
+    height:100%;
+    @include box_flex;
+    @include direction(column);
+}
+header{
+    width:100%;
+    height:pxTorem(44px);
+    padding:0 pxTorem(15px);
+    box-sizing:border-box;
+    @include box_flex;
+    @include align;
+    span{
+        margin:0 pxTorem(10px);
+        font-size:pxTorem(14px);
+        &:hover{
+            color:red;
+        }
+    }
+}
+section{
+      @include flex;
+      overflow: hidden;
+      .con{
+           .banner{
+               @include box_flex ;
+               @include justify(center);
+               width:85%;
+               height:pxTorem(100px);
+           }
+          p{
+              width:100%;
+              height:pxTorem(30px);
+              background:#F8F8F8;
+              margin:pxTorem(15px) 0;
+          }
+          .content{
+                padding:0 pxTorem(15px);
+                box-sizing: border-box;
+                h2{
+                    width:100%;
+                    height:pxTorem(50px);
+                    font-size:pxTorem(18px);
+                    line-height:pxTorem(40px)
+                }
+                .list{
+                   @include box_flex;
+                   @include direction(column);
+                    >div{
+                        @include box_flex;
+                        width:100%;
+                        height:pxTorem(80px);
+                        margin:pxTorem(10px) 0;
+                        >img{
+                            margin-right:pxTorem(15px);
+                        }
+                        .right{
+                            @include flex;
+                            h3{
+                                font-size:pxTorem(16px);
+                                line-height:pxTorem(40px);
+                            }
+                            .center{
+                                @include box_flex;
+                                 height:pxTorem(40px);
+                                div{
+                                    margin-right:pxTorem(15px);
+                                    height:pxTorem(40px);
+                                    @include box_flex;
+                                    @include align;
+                                    span{
+                                        margin:0 pxTorem(5px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+          }
+      }
+}

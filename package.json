@@ -1,0 +1,32 @@
+{
+  "name": "week-z",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lw0917/week-z.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lw0917/week-z/issues"
+  },
+  "homepage": "https://github.com/lw0917/week-z#readme",
+  "dependencies": {
+    "gulp-babel": "*",
+    "gulp-clean-css": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-webserver": "*",
+    "fs":"*",
+    "path":"*",
+    "url":"*"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
